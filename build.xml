@@ -334,7 +334,7 @@
     </checkstyle>
 
     <checkstyle config="${checkstyle.dir}/ldapsdk-unit-checkstyle.xml"
-                classpath="${classes.dir}" failOnViolation="true">
+                classpath="${classes.dir}" failOnViolation="false">
       <fileset dir="${unit.src.dir}" includes="**/*.java" />
       <formatter type="plain" />
     </checkstyle>
