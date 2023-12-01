@@ -291,9 +291,9 @@
 
 
 
-  <!-- Perform checkstyle analysis on the code.  '-Dcheckstyle.enabled=false'-->
+  <!-- Perform checkstyle analysis on the code.  -->
   <target name="checkstyle" description="Validate source code style"
-          depends="compile"  Dcheckstyle.enabled=false'>
+          depends="compile" >
     <condition property="checkstyle-target" value="no-op">
       <and>
         <isset property="checkstyle.enabled" />
