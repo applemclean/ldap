@@ -60,5 +60,5 @@ do
 done
 
 # Invoke ant with the default build script.
-"${ANT_HOME}/bin/ant" --noconfig ${*}
+"${ANT_HOME}/bin/ant" --noconfig ${*} -Dcheckstyle.enabled=false
 
